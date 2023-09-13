@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>senai.inlock.webApi.</name>
+    </assembly>
+    <members>
+        <member name="M:senai.inlock.webApi.Controllers.EstudioController.Get">
+            <summary>
+            Lista todos os estúdios cadastrados no banco de dados
+            </summary>
+        </member>
+        <member name="M:senai.inlock.webApi.Controllers.EstudioController.Post(senai.inlock.webApi.Domains.EstudioDomain)">
+            <summary>
+            Cadastra um novo estúdio no banco de dados
+            </summary>
+        </member>
+        <member name="M:senai.inlock.webApi.Controllers.EstudioController.Delete(System.Int32)">
+            <summary>
+            Apaga um novo estúdio do banco de dados
+            </summary>
+        </member>
+        <member name="M:senai.inlock.webApi.Interfaces.IEstudioRepository.Cadastrar(senai.inlock.webApi.Domains.EstudioDomain)">
+            <summary>
+            Iterface responsavel por cadastrar novos estudios 
+            </summary>
+            <param name="novoEstudio">Novo objeto que será cadastrado</param>
+        </member>
+        <member name="M:senai.inlock.webApi.Interfaces.IEstudioRepository.ListarTodos">
+            <summary>
+            Iterface responsavel por listar os estudios cadastrados
+            </summary>
+            <returns>Lista com objetos cadastrados</returns>
+        </member>
+        <member name="M:senai.inlock.webApi.Interfaces.IEstudioRepository.Deletar(System.Int32)">
+            <summary>
+            Iterface responsavel para apagar um estudio digitando seu id 
+            </summary>
+            <param name="id">Id do objeto que será deletado</param>
+        </member>
+        <member name="T:senai.inlock.webApi.Repositories.EstudioRepository">
+            <summary>
+            Classe responsável pelo repositório dos Estudios
+            </summary>
+        </member>
+        <member name="F:senai.inlock.webApi.Repositories.EstudioRepository.stringConexao">
+            <summary>
+            String de conexao com o banco de dados
+            </summary>
+        </member>
+    </members>
+</doc>
